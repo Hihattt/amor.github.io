@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <style>
+        button {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+        }
+
+        body {
+            background: rgb(246, 172, 215);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <h1>¿Quieres ser mi novia?</h1>
+    <button id="btn"><a href="cucu.html">Si</a></button>
+    <button class="btn" style="left:100px">No</button>
+
+    <script>
+        $('.btn').on('mouseover', function () {
+            $(this).css({
+                'top': Math.random() * window.innerHeight + "px",
+                'left': Math.random() * window.innerWidth + "px"
+            });
+        })
+        $('#btn').click(function () {
+            alert("ya somos novios :3")
+        })
+    </script>
+
+</body>
+
+</html>
